@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidexample.musicapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="RadioGaga"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".classicActivity"
+            android:label="Classic"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".rockActivity"
+            android:label="RockandRoll"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".popActivity"
+            android:label="Pop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".hipActivity"
+            android:label="HipHop"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".play"
+            android:label="Play"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

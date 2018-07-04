@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="classic">Classic</string>
+    <string name="Rock">Rock And Roll</string>
+    <string name="pop">Pop</string>
+    <string name="hip">Hip-Hop</string>
+</resources>
