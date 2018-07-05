@@ -8,7 +8,7 @@
         android:label="RadioGaga"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme">
@@ -21,22 +21,30 @@
         <activity
             android:name=".classicActivity"
             android:label="Classic"
-            android:theme="@style/AppTheme" />
+
+
+    />
         <activity
             android:name=".rockActivity"
             android:label="RockandRoll"
-            android:theme="@style/AppTheme" />
+
+            />
         <activity
             android:name=".popActivity"
             android:label="Pop"
-            android:theme="@style/AppTheme" />
+           />
         <activity
             android:name=".hipActivity"
             android:label="HipHop"
-            android:theme="@style/AppTheme" />
+         />
         <activity android:name=".play"
             android:label="Play"
-            android:theme="@style/AppTheme"/>
+            android:parentActivityName="com.androidexample.musicapp.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidexample.musicapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

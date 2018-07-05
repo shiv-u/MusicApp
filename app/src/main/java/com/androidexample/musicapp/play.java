@@ -1,23 +1,31 @@
 package com.androidexample.musicapp;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
+import android.view.Window;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
-public class play extends AppCompatActivity {
+public  class play extends AppCompatActivity {
 
     private String artist, song;
     private int thumbnail;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.play_screen);
+
 
 
         Intent intent = getIntent();
@@ -29,8 +37,12 @@ public class play extends AppCompatActivity {
         TextView artistText = findViewById(R.id.artist_name);
         artistText.setText(artist);
 
+
+
         TextView songText = findViewById(R.id.song_name);
         songText.setText(song);
+
+        this.setTitle(song);
 
         ImageView imageView = findViewById(R.id.pic);
         Glide.with(this)
@@ -43,5 +55,10 @@ public class play extends AppCompatActivity {
                 .into(imageView);
 
 
+
+
+
     }
+
+
 }

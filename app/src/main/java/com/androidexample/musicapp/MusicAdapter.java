@@ -24,11 +24,14 @@ public class MusicAdapter extends ArrayAdapter<Music> {
     MusicAdapter(Activity context, ArrayList<Music> music) {
         super(context, 0, music);
 
+
     }
+
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
 
         View listItemView = convertView;
         if (listItemView == null) {

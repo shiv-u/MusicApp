@@ -16,6 +16,7 @@ public class hipActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
 
+
         final ArrayList<Music> music = new ArrayList<>();
         music.add(new Music(R.drawable.eminem, "RapGod", "Eminem"));
         music.add(new Music(R.drawable.drake, "Scorpion", "Drake"));

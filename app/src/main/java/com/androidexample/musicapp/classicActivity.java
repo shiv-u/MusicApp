@@ -2,7 +2,9 @@ package com.androidexample.musicapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.support.v7.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -13,10 +15,12 @@ public class classicActivity extends AppCompatActivity {
 
 
     ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
+
 
         final ArrayList<Music> classic = new ArrayList<>();
         classic.add(new Music(R.drawable.beethoven,"Symhony No.5","Beethoven" ));

@@ -1,12 +1,13 @@
 package com.androidexample.musicapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     CardView classic, rock, pop, hip;
 
@@ -51,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-
 }
+
+
+
+
+
